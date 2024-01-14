@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Website-TroyKubanka</title>
+        <link rel="stylesheet" href="stylesheet.css">
+
+        <!--using boxicons.com for high qualty image logos of socials-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- script to rotate words on cover page -- from GitHub script -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <!-- Script to have email notification if someone contacts you -->
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <!-- java scrip function for contact email - emailjs -->
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("6RO2t-6lAShth4lh5");
+        })();
+        </script>
+        <!-- main.js script to use our functions -->
+        <script src="main.js"></script>
+    </head>
+
+<body>
+
+    <header class="header">
+        <a class="logo">My Website</a>
+        <nav class="navbar">
+            <!-- HOME -->
+            <a href="#" style="--i:1">Home&nbsp;</a> 
+            <!-- ABOUT -->
+            <a href="#home_about" style="--i:2">About&nbsp;</a>
+            <!-- PORTFOLIOS -->
+            <a href="#home_portfolio" style="--i:3">Portfolios&nbsp;</a>
+            <!-- CONTACT -->
+            <a href="#home_contact" style="--i:4">Contact</a>
+        </nav>
+    </header> 
+
+    <section class="home">   
+        <div class="home-content">
+            <h2>Hello, &nbsp;I'm</h2> <!-- nbsp is non-breaking space to add more spaces consecutively -->
+            <h1>Troy Kubanka</h1> 
+           
+            <h2> And I Love <span class="text"></span> </h2> 
+            <br> <!-- line break -->
+            <p>Thank you for checking out my personally developed website!
+                <br>I'm a passionate software developer aspiring to be a software engineer.
+                <br>I aim to create and design efficient and effective software solutions. <!-- MY VALUES (Communication, honesty, etc) -->
+            </p>
+            <div class="home-sci">
+                <!--boxicons logos with links (see href above)      target for new tab, rel for security -->
+                <a href="https://www.linkedin.com/in/troy-kubanka/" style="--i:2" target="_blank" rel="noopener noreferrer"><i class = 'bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Troy-Kubanka" style="--i:3" target="_blank" rel="noopener noreferrer"><i class = 'bx bxl-github'></i></a>
+                <a href="https://X.com/Troybanka" style="--i:4" target="_blank" rel="noopener noreferrer"><i class = 'bx bxl-twitter'></i></a>
+                <a href="https://instagram.com/troy.kubanka/" style="--i:5" target="_blank" rel="noopener noreferrer"><i class = 'bx bxl-instagram'></i></a>
+                <span style="padding-left: 25px;"><button class="btn-box" onclick="window.location.href='resumeCV.html'; rel='noopener noreferrer';">View Resume & CV</button></span>
+            </div>  <br><br>
+        </div> 
+
+        <div class="imgRightHome">
+            <img src="Img/HomeSizecircularlinkedInPhoto.png" alt="Professional Photo">
+        </div>
+        
+    </section>
+    <script src="main.js"> </script> <!-- to get rotating words -->
+
+
+
+
+    <section class="home_about" id="home_about">
+        <div class="home_about-img">
+            <img src="Img/mini_circularlinkedInPhoto.png" alt="Professional Photo">
+        </div>
+        <div class = "about-content">
+            <h1> About <span> Me </span> </h1>
+            <h4>Software Developer</h4>
+            <p> I'm a highly motivated and dedicated software developer with a relentless work ethic. Fueled by a 
+                passion for developing and problem-solving, I approach challenges with determination and ensure success 
+                through a combination of skill, adaptability, and commitment. My experience, classes, and practice include: </p>
+                <ul>
+                    <li> • &nbsp;Frontend with HTML, CSS, JavaScript, Swift iOS</li><br>
+                    <li> • &nbsp;Backend with Ruby, Ruby on Rails, Python</li><br>
+                    <li> • &nbsp;Databases using SQL, MySQL, phpMyAdmin</li><br>
+                    <li> • &nbsp;Data analysis using R, Rstudio, Excel, PowerBI</li><br>
+                    <li> • &nbsp;Core computer science fundamentals using C, C++</li><br>
+                </ul>
+            <p>
+                With each project, my goal is not just to meet 
+                expectations but to exceed them, showcasing my ability to thrive in the ever-evolving world of software. I am 
+                eager to continue learning, practicing, and expanding my knowledge across diverse sectors within the technology industry. 
+                <br><br>
+            </p>
+                &nbsp; 
+                <a href="about.html" class="btn-box">More About Me</a>
+             <br><br><br>
+                
+        </div>
+    </section>
+
+
+
+ <!-- portfolio section -->
+ <section class="home_portfolio" id="home_portfolio">
+    <div class="containor">
+        <h1 class="sub-title">My <span>Portfolios</span></h1> 
+        <div class="portfolio-list">
+            <div>
+                <i class='bx bx-code-curly' style='color: cyan;'> Software</i>
+                <p> My passion lies in learning software and understanding technology to provide 
+                    innovative solutions. 
+                    <br> <br> This portfolio showcases projects that I have done for work, school,
+                    or on my own (including this website!).
+                </p>
+                    <a href=https://sites.google.com/view/troykubanka-softwareportfolio/home 
+                        target="_blank" rel="noopener" class="seeMore" > See more </a>  
+            </div>
+            <div>
+                <i class='bx bxs-graduation' style='color: cyan;'> Honors</i><br>
+                <p> The Honors curriculum at my university continually inspires me to think critically and creatively.
+                    
+                    <br><br> This portfolio encompasses my honors work, research projects, and studying abroad. 
+                </p>
+                    <a href="https://sites.google.com/view/troykubanka-honorsportfolio/home" 
+                        target="_blank" rel="noopener" class="seeMore" > See more </a>  
+            </div>
+            <div>
+                <i class='bx bx-dollar-circle' style='color: cyan;'> Finance</i>
+                <p> I have a keen interest in business and finance, with a solid foundation gained from family, work, & classes.  
+                    <br><br>
+                    This portfolio covers my projects and presentations that highlight business and financial branches.</p>
+                    <a href="https://sites.google.com/view/troykubanka-financeportfolio/home"
+                        target="_blank" rel="noopener" class="seeMore" > See more </a>  
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+<!-- contact section -->
+    <section class="home_contact" id="home_contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span> </h2>
+            <h4> Let's Work Together!</h4>
+            <p> Thank you for reaching out! I would love to work together and discuss the exciting possibilities. <br>
+            </p>
+            <div class="contact-list">
+                <li><i class = "bx bxs-send" ></i> &nbsp; kubankatroy@gmail.com</li>
+           <!--     <li><i class = "bx bxs-phone" ></i> &nbsp; 0122365</li>   --> <!-- add phone # maybe?? -->
+            </div>                              
+            <div class="contact-icons"> <span style="padding-left: 150px;">   <!-- push icons right to look centered -->
+                <a href="https://www.linkedin.com/in/troy-kubanka/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Troy-Kubanka" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
+                <a href="https://X.com/Troybanka" target="_blank" rel="noopener noreferrer"><i class='bx bxl-twitter'></i></a>
+                <a href="https://instagram.com/troy.kubanka/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram'></i></a>
+            </span> </div>
+        </div>
+        
+        <div class="contact-form">
+            <form id="myForm" action="">
+                <input href="#home_contact"  type="" id="sender" placeholder="Your name *" required>
+                <input type="email" id="originAddress" placeholder="Your email *" required>
+                <input type="" id="subject" placeholder="Subject">
+                <textarea type="" name="" id="message" cols="40" rows="10" placeholder="Message" required></textarea> 
+                <input type="submit" onclick=sendMail() value="Submit" class="send"> 
+            </form>
+        </div>
+    </section>
+
+    <!-- accredited tag at bottom of site -->
+    <!-- CSS code in style (rather than add it with all the other classes) -->
+    <style> #endDevelop{height: 3vh; color: rgb(193, 183, 170); background: rgb(0, 0, 67); text-align: center;}</style>
+    <section class="endDevelop" id="endDevelop">
+        <p> Developed by Troy Kubanka </p>
+    </section>
+
+</body>
+</html>

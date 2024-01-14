@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>ResumePage</title>
+        <link rel="stylesheet" href="stylesheet.css">
+
+        <!--using boxicons.com for high qualty image logos of socials-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- using link to rotate words on cover page -- from GitHub script -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    </head>
+
+<body>
+
+    <header class="header">
+        <a class="logo">Resume & CV</a>
+
+        <nav class="navbar">
+            <!-- HOME -->
+            <a href="index.html#" style="--i:1">Home&nbsp;</a> 
+            <!-- ABOUT -->
+            <a href="index.html#home_about" style="--i:2">About&nbsp;</a>
+            <!-- PORTFOLIOS -->
+            <a href="index.html#home_portfolio" style="--i:3">Portfolios&nbsp;</a>
+            <!-- CONTACT -->
+            <a href="index.html#home_contact" style="--i:4">Contact</a>
+        </nav>
+    </header> 
+
+
+    <style>#PDFTab{cursor: pointer;} </style> 
+
+    <section class="resumeCV">
+        <div class = "resumeCV-content">
+            <h1> &nbsp; General <span> Resume </span> </h1>
+            <object
+                type="application/pdf"
+                data="add-ons/ResumeGeneral - Troy2023.pdf"
+                width="500"
+                height="701"
+            > </object>
+            <a id="PDFTab" onclick="window.open('add-ons/ResumeGeneral - Troy2023.pdf'); 
+            target='_blank'; rel='noopener';">(Click Here to Open in New Tab)</a>
+        </div>
+        <div class="resumeCV-content">
+            <h1> &nbsp; CV </h1>
+            <object
+                type="application/pdf"
+                data="add-ons/CV - Troy2023.pdf"
+                width="500"
+                height="701"  
+            > </object> 
+            <a id="PDFTab" onclick="window.open('add-ons/CV - Troy2023.pdf'); 
+            target='_blank'; rel='noopener';">(Click Here to Open in New Tab)</a>
+        </div>
+    </section>
+
+<!--
+    <section class="resumeCVExtend"> extends content page to fit the full pdf 
+    </section>
+-->
+    
+
+<!-- accredited tag at bottom of site -->
+<style> #endDevelop{height: 3vh; color: rgb(193, 183, 170); background: rgb(0, 0, 67); text-align: center;}</style>
+<section class="endDevelop" id="endDevelop">
+    <p>Developed by Troy Kubanka</p>
+</section>
+
+</body>
+</html>
