@@ -78,11 +78,17 @@
         </section>
 
 
-<!-- accredited tag at bottom of site... with CSS style as id -->
-<style> #endDevelop{height: 3vh; color: rgb(193, 183, 170); background: rgb(0, 0, 67); text-align: center;}</style>
-<section class="endDevelop" id="endDevelop">
-    <p>&copy; Developed by Troy Kubanka </p>
-</section>
+<!-- accredited footer at bottom of page -->
+    <style> #footer{font-size: small; font-style: italic; text-align: center; color: rgb(193, 183, 170); background: rgb(0, 0, 67);}</style>
+    <div class="footer" id="footer">Copyright &#169; <span id="currentYear"></span><br>Developed by Troy Kubanka
+    </div>
+    <!-- JS Script to keep copyright yr updated -->
+    <script> 
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+        // Update the content of the element with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
 
 </body>
 
