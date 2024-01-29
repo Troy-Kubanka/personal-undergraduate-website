@@ -172,12 +172,18 @@
         </div>
     </section>
 
-    <!-- accredited tag at bottom of site -->
+    <!-- accredited footer at bottom of site -->
     <!-- CSS code in style (rather than add it with all the other classes) -->
-    <style> #endDevelop{height: 3vh; color: rgb(193, 183, 170); background: rgb(0, 0, 67); text-align: center;}</style>
-    <section class="endDevelop" id="endDevelop">
-        <p>&copy; Developed by Troy Kubanka </p>
-    </section>
+      <style> #footer{font-size: small; font-style: italic; text-align: center; color: rgb(193, 183, 170); background: rgb(0, 0, 67); margin-top: -15px; padding-bottom: 5px;}</style>
+     <div class="footer" id="footer">Developed by Troy Kubanka<br>Copyright &#169; <span id="currentYear"></span>
+     </div>
+     <!-- JS Script to keep copyright yr updated -->
+     <script> 
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+        // Update the content of the element with the current year
+        document.getElementById("currentYear").innerText = currentYear;
+     </script>
 
 </body>
 </html>
