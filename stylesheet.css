@@ -12,18 +12,20 @@ html{
 }
 body
 {
+    background: rgb(0, 0, 50);
     color: #ededed;
     height: -webkit-fill-available;
 }
 section
 {
     /* background for each section */
-    background: url(Img/stripedblueBackground.jpeg) no-repeat; 
+   /* background: url(Img/stripedblueBackground.jpeg) no-repeat; 
     background-size: cover;
     height: 100vh; /* default web page size for each section. */
     background-position: center; 
     max-width: 100%;   
-    overflow: scroll; 
+    overflow:scroll; 
+    height:fit-content;
 }
 .header
 {
@@ -36,8 +38,8 @@ section
     justify-content: space-between;
     align-items: center;
     z-index: 100; 
-
-    background: url(Img/navStripedblueBackground.jpeg) no-repeat;          /* matches with section background */
+    background-color: rgb(0, 0, 30);
+   /* background: url(Img/navStripedblueBackground.jpeg) no-repeat;          /* matches with section background */
     background-size: cover;
     opacity: .9;            /* like 10% transparent. Can see slightly text slide behind header/navbar*/
 }
@@ -75,6 +77,13 @@ section
     }
     .navbar a:hover{
     color: #0ef;
+}
+
+.footer {       
+    font-size: small;
+    text-align: center;
+    font-style: italic;
+    padding-top: 20px;
 }
 
 img{
