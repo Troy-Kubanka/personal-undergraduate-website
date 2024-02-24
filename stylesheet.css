@@ -720,6 +720,7 @@ max-width: 600px;
         white-space: pre;
     }
 
+    
       .home-content p{
         font-size: 20px;
       }
@@ -770,6 +771,10 @@ max-width: 600px;
     }
     
 
+    /* resume pg*/
+    .resumeCV {
+        margin-top: 100px;
+      }
 
     /* about page */
     .logo{
