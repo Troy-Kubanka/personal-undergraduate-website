@@ -691,7 +691,8 @@ max-width: 600px;
     
    .footer{
     margin-top: auto;
-    padding-top: 50%;
+    padding-top: 70%;
+    clear:both;
    }
 
    /* buttons */
