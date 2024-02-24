@@ -690,9 +690,7 @@ max-width: 600px;
 @media screen and (max-width: 768px) {
     
    .footer{
-    margin-top: auto;
-    padding-top: 70%;
-    clear:both;
+    display: none; 
    }
 
    /* buttons */
