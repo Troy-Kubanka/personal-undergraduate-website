@@ -1,4 +1,4 @@
-/*     all html docs     */
+/*    Style sheet for all html docs     */
 * /* everything - default */
 {
     margin: 0;
@@ -245,7 +245,7 @@ img{
     height: 100vh;
     justify-content: space-between;  
     
-    padding: 70px 8% 0; 
+/*    padding: 70px 8% 0; */
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -257,9 +257,9 @@ img{
 max-width: 600px; 
 }
 .about-content h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 700;
-    margin: -3px 0;
+/*    margin: -3px 0;        */
     
     animation: slideBottom 1s ease forwards; /* animation + delay for Name and cycling words */
     animation-delay: .1s;
@@ -267,6 +267,7 @@ max-width: 600px;
         .about-content h1 span{
             color: cyan;        /* makes the header 'ME' in cyan */
     }
+/*
 .about-content h3 {
     font-size: 32px;
     font-weight: 700;
@@ -274,11 +275,12 @@ max-width: 600px;
     animation: slideBottom 1s ease forwards; 
     animation-delay: .05s;
     }
-    .about-content h3 span { /* For the color/design of the swapping "text" tag */
-        color: cyan;/* #0ef; */
+    .about-content h3 span 
+        color: cyan;
 } 
+*/
 .about-content h4{
-    font-size: 25px;
+    font-size: 32px;
     animation: slideBottom 1s ease forwards;
     animation-delay: .1s;
 }
