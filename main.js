@@ -32,7 +32,7 @@ var typed = new Typed(".text", {
           ) { 
               emailjs.send("service_q6vf7ud", "template_f5hlnzw", params).then(
                                                                           alert("Message successfully sent. Thank You " + 
-                                                                          params.name + "! \n \n - Troy")); 
+                                                                          params.name)); 
                                                                                       // notify submission successful
                // to remove info and reload page
                document.getElementById("myForm").reset();    //clear contact Info    
