@@ -64,7 +64,7 @@ section
          /* see 'keyframes slideRight' css block */ 
     }
     .logo:hover{
-        color: cyan;  
+        color: #0ef;  
 }
 
 .navbar{
