@@ -63,8 +63,8 @@ section
     animation: slideRight 1s ease forwards;
          /* see 'keyframes slideRight' css block */ 
     }
-    .logo span{
-        color: cyan;   /* If we use span with logo style, turns the word blue */
+    .logo:hover{
+        color: cyan;  
 }
 
 .navbar{
