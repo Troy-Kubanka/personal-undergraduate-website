@@ -529,6 +529,7 @@ max-width: 600px;
     height: 220px;
 }
 .contact-form form .send{
+    cursor: pointer;
     display: inline-block;
     padding: 12px 28px;
     background: cyan;
