@@ -356,7 +356,7 @@ max-width: 600px;
 
     .portfolio-list div:nth-child(1):hover{
         /* background-color: rgb(0, 0, 97);  */
-        background: url(Img/WozSoftwareEngineer.jpg) center center/contain no-repeat;
+        background: url(Img/WozSoftwareEngineer2.jpg)/*(Img/WozSoftwareEngineer.jpg)*/ center center/contain no-repeat;
          /* background: url(Img/SoftwareWozPhoto.jpeg) center center/contain no-repeat; */
         background-size: cover;
         transition: background 1.2s;
