@@ -153,11 +153,17 @@ main{
 
     transition: transform 0.5s ease;
 
+    flex-wrap: wrap;
 
 }
 .container:hover{
     transform: translateY(-15px);
     transform: scale(1.05);
+}
+
+.content-container{
+    max-width: 100%; /* Prevent content container from exceeding  main container */
+
 }
 
 .content-container h1{
@@ -172,6 +178,8 @@ main{
     margin-bottom: 2rem;
     color: #ededed;
     width: 26rem;
+
+    max-width: 100%; /* Prevent text from exceeding the container's width */
 }
 
 
@@ -395,4 +403,68 @@ button:hover {
     
 
 
+
+
+
+@media (max-width: 1245px) {
+    .container {
+        flex-direction: column; /* Stack image and content vertically */
+        padding: 1rem;
+    }
+
+    .img {
+        margin: 0 auto 1rem;
+        width: 80%; /* Shrink image width on smaller screens */
+        max-width: 280px;
+
+        transform: translateX(30px) !important
+    }
+
+    .imgTest {
+        margin: 0 auto 1rem;
+        width: 80%; /* Shrink image width on smaller screens */
+        max-width: 280px;
+
+        transform: translateX(0px) !important
+        
+    }
     
+    /* Used to space out rotating images on smaller screens without blocking text */
+    .specialh1 {
+        margin-top: 16rem;
+    }
+
+    .specialh2 {
+        margin-top: 18rem;
+    }
+
+    .content-container {
+        text-align: center;
+    }
+
+   
+
+    .content-container p {
+        font-size: 0.9rem; /* Adjust text size for readability */
+    }
+
+
+    /* Keyframes for fade animation */
+@keyframes fadeAnimation {
+    0%, 20% {
+        opacity: 0;
+    }
+    5%, 15% {
+        opacity: 1;
+    }
+    20%, 100% {
+        opacity: 0;
+    }
+}
+
+}
+
+
+
+
+
