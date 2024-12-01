@@ -31,13 +31,13 @@ var typed = new Typed(".text", {
             && params.email.charAt(params.email.indexOf("@")+1)!='.'    // confirms there is no . right after @ or .. after @
           ) { 
             /*
-              emailjs.send("service_q6vf7ud", "template_f5hlnzw", params).then(
+              emailjs.send("service_laceefp", "template_f5hlnzw", params).then(
                                                                           alert("Message successfully sent. Thank You " + 
                                                                           params.name)); 
                                                                                       // notify submission successful
   */
 //
-            emailjs.send("service_q6vf7ud", "template_f5hlnzw", params)
+            emailjs.send("service_laceefp", "template_f5hlnzw", params)
   .then(() => {
     Swal.fire({
       icon: 'success',
