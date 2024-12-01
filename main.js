@@ -30,11 +30,10 @@ var typed = new Typed(".text", {
             && params.email.substring && !specialCharactersRegex.test(lettersAfterAtSign)   // tests if there is characters after @, and none of those characters after @ are special
             && params.email.charAt(params.email.indexOf("@")+1)!='.'    // confirms there is no . right after @ or .. after @
           ) { 
-            
-              emailjs.send("service_laceefp", "template_f5hlnzw", params).then(() => {
+
+            emailjs.send("service_laceefp", "template_f5hlnzw", params).then(
                                                                           alert("Message successfully sent. Thank You " + 
-                                                                          params.name + "!");
-                                                                         })
+                                                                          params.name + "!")); 
                                                                                       // notify submission successful
 
 
