@@ -99,7 +99,7 @@ img{
     max-width: 100%;
 }
 /*--------------------------------------------------------------*/
-/*          Animations - move text up/down, left/right          */
+/*          Animations - move text up/down & left/right          */
 @keyframes slideRight {
     0% {
     transform: translateX(-100px); /* moves right (or left) with X */ 
@@ -110,7 +110,7 @@ img{
     opacity: 1;
     }
 }
-@keyframes slideLeft {
+@keyframes slideLeft { 
     0% {
     transform: translateX(100px); 
     opacity: 0;
