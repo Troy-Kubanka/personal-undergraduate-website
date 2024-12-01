@@ -161,7 +161,7 @@ img{
     z-index: 2;
     opacity: 0;
     animation: slideTop 1s ease forwards;
-    animation-delay: .8s;
+    animation-delay: .7s;
     box-shadow: 0 0 5px cyan,
                 0 0 25px cyan;
 }
