@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+html{
+    height: -webkit-fill-available;   /* to fit screens */
+}
+
+
+body
+{
+    background: rgb(0, 0, 50);
+    color: #ededed;
+}
+
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; 
+    background-color: rgb(0, 0, 30);
+   /* background: url(Img/navStripedblueBackground.jpeg) no-repeat;          /* matches with section background */
+    background-size: cover;
+    opacity: .9;            /* like 10% transparent. Can see slightly text slide behind header/navbar*/
+}
+.logo {
+    position: relative;
+    font-size: 30px;
+    color:#fff;
+    
+    text-decoration: none;
+    font-weight: 600;
+    /* Below allows the text to move together on load-in */
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+         /* see 'keyframes slideRight' css block */ 
+    }
+    .logo:hover{
+        color: cyan;   
+}
+
+.navbar{
+    z-index: 2;
+}
+.navbar a {                 /* top navigation bar */
+    display: inline-block; 
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 45px;
+    transition: .3s;
+    /* to add animation to top navbar */
+    opacity: 0;
+    animation: slideBottom .5s ease forwards; 
+    animation-delay: calc(.05s*var(--i));  /* delay by variable --i for navbar, --i assigned with style= in html */
+    }
+    .navbar a:hover{
+    color: #0ef;
+}
+
+.footer
+{
+    font-size: small; font-style: italic; 
+    text-align: center; 
+    color: rgb(193, 183, 170); background: rgb(0, 0, 45);
+}
+
+h1, h2{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+.input-container{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ff6e00;
+    padding: 5px;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 10px;
+    position: relative;
+    transition: width 1.5s;
+}
+
+.input {
+    margin: 10px 50px;
+    margin-left: 20px;
+    width: 100%;
+    color: #ff6e00;
+    border: none;
+    background: transparent;
+    outline: none;
+    transition-delay: 0.5s;
+}
+
+/*
+.magnifier{
+    position: absolute;
+    right: 15px;
+    width: 25px;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #ff6e00;
+}
+*/
+
+ul li{
+    display: inline;
+    margin-left: 40px;
+    font-family: sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: slideRight 1s ease forwards;    
+}
+
+
+.container{
+    width: 70%;
+    padding: 3rem;
+    box-shadow: 10px 10px 40px 5px #0053b8f7;
+                
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+
+    transition: transform 0.5s ease;
+
+
+}
+.container:hover{
+    transform: translateY(-15px);
+    transform: scale(1.05);
+}
+
+.content-container h1{
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: #ededed;
+}
+
+.content-container p{
+    font-family: sans-serif;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    color: #ededed;
+    width: 26rem;
+}
+
+
+
+
+
+
+.img{
+
+    transform: translateX(-100px) !important;
+    margin-top: 1rem;
+    width: 360px;
+    border-radius: 300px;
+    box-shadow: -10px 2px 30px -7px #0053b8f7;
+    
+    
+    /* transition: transform 3s ease 2s;
+
+    /*
+    animation: slideAnimation 20s infinite;  */
+}   
+ 
+
+
+
+
+
+
+/* Image styling to stay fixed at -100px horizontally */
+/* USE FOR 2 & 4 */
+.imgTest {
+    transform: translateX(-100px) !important;
+    margin-top: 1rem;
+    width: 360px;
+    border-radius: 300px;
+    box-shadow: -10px 2px 30px -7px #0053b8f7;
+    transition: opacity 1s;
+    position: absolute; /* Absolute positioning to stack images */
+   
+    transform: translate(-50%, -50%) translateX(-100px); /* Correct positioning */
+    opacity: 0; /* Initially hidden */
+   
+    animation: fadeAnimation 48s infinite;   
+}
+
+/* Add specific animation delay for each image */
+.imgTest:nth-child(1) {
+    animation-delay: 0s;
+}
+.imgTest:nth-child(2) {
+    animation-delay: 6s;
+}
+.imgTest:nth-child(3) {
+    animation-delay: 12s;
+}
+.imgTest:nth-child(4) {
+    animation-delay: 18s;
+}
+.imgTest:nth-child(5) {
+    animation-delay: 24s;
+}
+.imgTest:nth-child(6) {
+    animation-delay: 30s;
+}
+.imgTest:nth-child(7) {
+    animation-delay: 36s;
+}
+.imgTest:nth-child(8) {
+    animation-delay: 42s;
+}
+
+@keyframes fadeAnimation {
+    0%, 20% {
+        opacity: 0;
+    }
+    5%, 15% {
+        opacity: 1;
+    }
+    20%, 100% { opacity: 0; /* Ensure no gaps by setting opacity to 0 immediately after */ }
+}
+
+
+
+
+
+
+
+
+
+
+/* Add a class to trigger the animation after load-in 
+.img.loaded {
+    transform: translateX(-100px);  /* Default position 
+    animation: slideAnimation 30s infinite;  /* Starts the continuous animation 
+}
+*/
+
+
+.ingredients{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 50px;
+}
+.ingredients span{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+/* maybe add border and style to description box??? 
+.ing {
+    padding: 10px 20px;
+    border: 2px solid #ff6e00;
+    font-family: sans-serif;
+    border-radius: 100px;
+}
+*/
+
+
+button{ /* see more buttons */
+    display: inline-block;
+    padding: 12px;
+    background: cyan;
+    border-radius: 40px;
+    border-color: transparent;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 2;
+    opacity: 0;
+    animation: slideRight 1.25s ease forwards;
+    box-shadow: 0 0 5px cyan,
+                0 0 25px cyan;
+}
+button:hover {
+    box-shadow:         0 0 30px cyan,
+                        0 0 30px cyan, 0 0 30px cyan;
+}     
+
+
+
+
+
+
+
+
+
+
+
+/*          Animations - move text up/down, left/right          */
+@keyframes slideRight {
+    0% {
+    transform: translateX(-100px); /* moves right (or left) with X */ 
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0px);
+    opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0% {
+    transform: translateX(100px); 
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0px);
+    opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0% {
+    transform: translateY(100px); /* moves up (or down) with Y */
+    opacity: 0;
+    }
+    100% {
+    transform: translateY(0px);
+    opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0% {
+    transform: translateY(-100px);
+    opacity: 0;
+    }
+    100%{
+    transform: translateY(0px);
+    opacity: 1;
+    }
+}
+
+
+
+/* to rotate images */
+
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    5% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    20% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    25% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+    
+
+
+    
