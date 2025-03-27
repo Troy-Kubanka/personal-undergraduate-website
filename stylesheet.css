@@ -676,7 +676,7 @@ max-width: 600px;
     width: auto;
 */
     animation: slideLeft .85s ease forwards;
-    max-width: 430px; 
+    max-width: 380px; 
     width: 100%; /* Makes it responsive */
     height: auto;
     text-align: center;
