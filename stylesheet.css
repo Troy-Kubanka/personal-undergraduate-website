@@ -668,11 +668,18 @@ max-width: 600px;
 /* linkedin images w/ parameters */
 
 .imgRightHome{   /* image on right side of page */
+    /*
     animation: slideLeft .85s ease forwards;
-    max-width: 630px; 
+    max-width: 430px; 
     text-align: center;
     height: auto;
     width: auto;
+*/
+    animation: slideLeft .85s ease forwards;
+    max-width: 430px; 
+    width: 100%; /* Makes it responsive */
+    height: auto;
+    text-align: center;
   }
   
   .home_about-img{ 
